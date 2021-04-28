@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Widget Base</title>
+  </head>
+
+  <body>
+    <!-- Customer Portal info added to the host div -->
+
+    <!-- Scenario 3 -->
+    <div class="nd-service-booking-widget" data-title="Mr" data-first-name="Peter" data-last-name="Brown" data-email="hien.buihongminh@gforces.auto" data-address-line-1="4a" data-address-line-2="Station Road" data-address-line-3="" data-city="Maidstone" data-county="Kent" data-country="United Kingdom" data-postcode="ME16 8DN" data-telephone="01211234567" data-vin="SALCA2CN2HH675819" data-dealer-code="H9447"></div>
+
+    <script type="text/javascript">
+      var nd = nd || {};
+      nd.widget = nd.widget || {};
+      nd.widget.serviceCentreV2 = nd.widget.serviceCentreV2 || {};
+      nd.widget.serviceCentreV2.dropcode = ["https://ndservicecentrev2.testing.docker.gforcesinternal.co.uk/", 'build/', ["3f4bc2735acfd53e9d694080fddd2f195e04b13a"]];
+      window.nd = nd;
+      var s = 'script',
+        o = document.createElement(s);
+      o.type = 'text/javascript';
+      o.src = nd
+        .widget
+        .serviceCentreV2
+        .dropcode[0] + nd
+        .widget
+        .serviceCentreV2
+        .dropcode[1] + 'widget.js';
+      document
+        .getElementsByTagName(s)[0]
+        .parentNode
+        .appendChild(o);
+    </script>
+  </body>
+
+</html>
