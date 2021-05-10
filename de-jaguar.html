@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<!-- declaration of type of the document -->
+<html>
+
+  <head>
+    <link rel="shortcut icon" href="">
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <!--A <meta> viewport element gives the browser instructions on how to control the page's dimensions and scaling. The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device). The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser. -->
+  </head>
+
+  <body>
+    <div class="nd-service-booking-widget"></div>
+    <script type="text/javascript">
+      var nd = nd || {};
+      nd.widget = nd.widget || {};
+      nd.widget.serviceCentreV2 = nd.widget.serviceCentreV2 || {};
+      nd.widget.serviceCentreV2.retailerBooking = 0;
+      nd.widget.serviceCentreV2.dropcode = ["https://ndservicecentrev2.testing.docker.gforcesinternal.co.uk/", 'build/', ["20c223346b124f941adac6bbb09c26f2920a8025"]];
+      window.nd = nd;
+      var s = 'script',
+        o = document.createElement(s);
+      o.type = 'text/javascript';
+      o.src = nd
+        .widget
+        .serviceCentreV2
+        .dropcode[0] + nd
+        .widget
+        .serviceCentreV2
+        .dropcode[1] + 'widget.js';
+      document
+        .getElementsByTagName(s)[0]
+        .parentNode
+        .appendChild(o);
+    </script>
+  </body>
+
+</html>
