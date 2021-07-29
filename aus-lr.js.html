@@ -9,18 +9,9 @@
   </head>
 
   <body>
-    var leadInTag = document.getElementById('book-a-service-tool');
-    leadInTag.classList.add("js-book-a-service-tool");
-    leadInTag.classList.add("nd-service-booking-widget");
-    var nd = nd || {};
-    nd.widget = nd.widget || {};
-    nd.widget.serviceCentreV2 = nd.widget.serviceCentreV2 || {};
-    nd.widget.serviceCentreV2.dropcode = ["https://ndservicecentrev2.testing.docker.gforcesinternal.co.uk/", 'build/', ["5a487b3d63afecf43c743037c3abaaf8f2d915f6"]];
-    window.nd = nd;
-    var s = 'script', o = document.createElement( s );
-    o.type = 'text/javascript';
-    o.src = nd.widget.serviceCentreV2.dropcode[0] + nd.widget.serviceCentreV2.dropcode[1] + 'widget.js';
-    document.getElementsByTagName( s )[0].parentNode.appendChild( o );
-  </body>
+    <p>Warning!!! In Production environment...</p>
+		<div id="book-a-service-tool"></div>
+	</body>
+	<script src="https://ndservicecentrev2.testing.docker.gforcesinternal.co.uk/land-rover/js/bookaservice-aus-gea.js"></script>
 
 </html>
