@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<!-- declaration of type of the document -->
+<html>
+
+  <head>
+    <link rel="shortcut icon" href="">
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <!--A <meta> viewport element gives the browser instructions on how to control the page's dimensions and scaling. The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device). The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser. -->
+  </head>
+
+  <body>
+    var leadInTag = document.getElementById('book-a-service-tool');
+    leadInTag.classList.add("js-book-a-service-tool");
+    leadInTag.classList.add("nd-service-booking-widget");
+    var nd = nd || {};
+    nd.widget = nd.widget || {};
+    nd.widget.serviceCentreV2 = nd.widget.serviceCentreV2 || {};
+    nd.widget.serviceCentreV2.dropcode = ['https://service-centre-germany.netdirector.co.uk/', 'build/', ['70ca7e4320997a493b42c10333d4d22a06d44318']];
+    var s = 'script', o = document.createElement( s );
+    o.type = 'text/javascript';
+    o.src = nd.widget.serviceCentreV2.dropcode[0] + nd.widget.serviceCentreV2.dropcode[1] + 'widget.js';
+    document.getElementsByTagName( s )[0].parentNode.appendChild( o );
+  </body>
+
+</html>
