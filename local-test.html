@@ -1,12 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<!-- declaration of type of the document -->
+<html>
 
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <link rel="shortcut icon" href="">
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <!--A <meta> viewport element gives the browser instructions on how to control the page's dimensions and scaling. The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device). The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser. -->
     <link rel="stylesheet" href="style.css">
+    <script defer href="script.js"></script>
   </head>
 
   <body>
@@ -27,33 +28,7 @@
       </div>
     </div>
     <hr class="divider">
-    <!-- Customer Portal info added to the host div -->
-
-    <!-- Scenario 3 -->
-    <div class="nd-service-booking-widget" data-title="Ms" data-first-name="Jessica" data-last-name="Dolph" data-email="hien.buihongminh@gforces.auto" data-address-line-1="4a" data-address-line-2="Station Road" data-address-line-3="" data-city="Maidstone" data-county="Kent" data-country="United Kingdom" data-postcode="ME16 8DN" data-telephone="01211234567" data-vin="SAJBB4AN7HCY30796" data-dealer-code="J0714"></div>
-
-    <script type="text/javascript">
-      var nd = nd || {};
-      nd.widget = nd.widget || {};
-      nd.widget.serviceCentreV2 = nd.widget.serviceCentreV2 || {};
-      nd.widget.serviceCentreV2.retailerBooking = 0;
-      nd.widget.serviceCentreV2.dropcode = ["https://ndservicecentrev2.testing.docker.gforcesinternal.co.uk/", 'build/', ["5ab642bd8d72b7e4a0a12c479c9ac4ee1d8b807f"]];
-      window.nd = nd;
-      var s = 'script',
-        o = document.createElement(s);
-      o.type = 'text/javascript';
-      o.src = nd
-        .widget
-        .serviceCentreV2
-        .dropcode[0] + nd
-        .widget
-        .serviceCentreV2
-        .dropcode[1] + 'widget.js';
-      document
-        .getElementsByTagName(s)[0]
-        .parentNode
-        .appendChild(o);
-    </script>
+    <div class="nd-service-booking-widget"></div>    
     <hr class="divider">
     <footer>
       <p style="text-align: center;">
