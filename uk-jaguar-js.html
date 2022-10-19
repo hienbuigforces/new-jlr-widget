@@ -43,26 +43,11 @@
     </div>
     <hr class="divider" />
     <div class="nd-service-booking-widget"></div>
-    <script type="text/javascript">
-      var nd = nd || {};
-      nd.widget = nd.widget || {};
-      nd.widget.serviceCentreV2 = nd.widget.serviceCentreV2 || {};
-      nd.widget.serviceCentreV2.retailerBooking = 0;
-      nd.widget.serviceCentreV2.dropcode = [
-        "https://ndservicecentrev2.testing.docker.gforcesinternal.co.uk/",
-        "build/",
-        ["5ab642bd8d72b7e4a0a12c479c9ac4ee1d8b807f"],
-      ];
-      window.nd = nd;
-      var s = "script",
-        o = document.createElement(s);
-      o.type = "text/javascript";
-      o.src =
-        nd.widget.serviceCentreV2.dropcode[0] +
-        nd.widget.serviceCentreV2.dropcode[1] +
-        "widget.js";
-      document.getElementsByTagName(s)[0].parentNode.appendChild(o);
-    </script>
+    <div class="nd-service-booking-widget"></div>
+    <script
+      type="text/javascript"
+      src="https://service-centre.netdirector.co.uk/build/widget.js"
+    ></script>
     <hr class="divider" />
     <footer>
       <p style="text-align: center">
