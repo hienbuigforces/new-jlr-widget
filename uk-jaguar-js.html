@@ -43,10 +43,26 @@
     </div>
     <hr class="divider" />
     <div class="nd-service-booking-widget"></div>
-    <script
-      type="text/javascript"
-      src="https://service-centre.netdirector.co.uk/build/widget.js"
-    ></script>
+    <script type="text/javascript">
+      var nd = nd || {};
+      nd.widget = nd.widget || {};
+      nd.widget.serviceCentreV2 = nd.widget.serviceCentreV2 || {};
+      nd.widget.serviceCentreV2.retailerBooking = 0;
+      nd.widget.serviceCentreV2.dropcode = [
+        "https://service-centre.netdirector.co.uk",
+        "build/",
+        ["4ae53a8c0fed23d941fa785e10792a7ccdc3c6b4"],
+      ];
+      window.nd = nd;
+      var s = "script",
+        o = document.createElement(s);
+      o.type = "text/javascript";
+      o.src =
+        nd.widget.serviceCentreV2.dropcode[0] +
+        nd.widget.serviceCentreV2.dropcode[1] +
+        "widget.js";
+      document.getElementsByTagName(s)[0].parentNode.appendChild(o);
+    </script>
     <hr class="divider" />
     <footer>
       <p style="text-align: center">
